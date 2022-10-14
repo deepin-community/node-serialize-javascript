@@ -1,0 +1,19 @@
+Description: Avoid privacy breach in documentation
+Forwarded: no
+Author: Jonas Smedegaard <dr@jones.dk>
+Last-Update: 2020-12-03
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/README.md
++++ b/README.md
+@@ -3,10 +3,6 @@
+ 
+ Serialize JavaScript to a _superset_ of JSON that includes regular expressions, dates and functions.
+ 
+-[![npm Version][npm-badge]][npm]
+-[![Dependency Status][david-badge]][david]
+-[![Build Status][travis-badge]][travis]
+-
+ ## Overview
+ 
+ The code in this package began its life as an internal module to [express-state][]. To expand its usefulness, it now lives as `serialize-javascript` — an independent package on npm.

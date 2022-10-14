@@ -1,0 +1,12 @@
+node-serialize-javascript (5.0.1-2) unstable; urgency=medium
+
+  * simple re-release for a clean build
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 06 Dec 2020 15:25:03 +0100
+
+node-serialize-javascript (5.0.1-1) unstable; urgency=low
+
+  * initial release;
+    closes: Bug#976314
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 03 Dec 2020 10:52:05 +0100

@@ -1,0 +1,7 @@
+Test-Command:
+ sed -i -e 's,\.\./\.\./,serialize-javascript,' test/unit/serialize.js
+ && mocha --reporter=tap test/unit
+Depends:
+ node-serialize-javascript,
+ mocha,
+ node-chai,
