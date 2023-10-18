@@ -5,24 +5,26 @@ Source: https://github.com/yahoo/serialize-javascript
 
 Files: *
 Copyright:
-  2014, Yahoo! Inc.
+  2014  Yahoo! Inc.
 License-Grant:
  Copyrights licensed under the New BSD License.
  See the accompanying <LICENSE> file for terms.
 License: BSD-3-clause~Yahoo
+Reference: package.json
+Reference: LICENSE
 
 Files:
  debian/*
 Copyright:
-  2020, Jonas Smedegaard <dr@jones.dk>
-  2020, Purism, SPC
+  2020-2021  Jonas Smedegaard <dr@jones.dk>
 License-Grant:
- This program is free software;
+ This packaging is free software;
  you can redistribute it and/or modify it
  under the terms of the GNU General Public License
  as published by the Free Software Foundation;
  either version 3, or (at your option) any later version.
 License: GPL-3+
+Reference: debian/copyright
 
 License: BSD-3-clause~Yahoo
  Redistribution and use in source and binary forms,
@@ -64,4 +66,4 @@ License: BSD-3-clause~Yahoo
  EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 License: GPL-3+
-License-Reference: /usr/share/common-licenses/GPL-3
+Reference: /usr/share/common-licenses/GPL-3

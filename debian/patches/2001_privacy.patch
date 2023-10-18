@@ -12,7 +12,7 @@ This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
  
 -[![npm Version][npm-badge]][npm]
 -[![Dependency Status][david-badge]][david]
--[![Build Status][travis-badge]][travis]
+-![Test](https://github.com/yahoo/serialize-javascript/workflows/Test/badge.svg)
 -
  ## Overview
  

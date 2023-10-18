@@ -441,6 +441,12 @@ describe('serialize( obj )', function () {
             expect(serialize({t: [b]})).to.be.a('string').equal('{"t":[BigInt("9999")]}');
         });
 
+        it('should serialize 0n', function () {
+            var b = BigInt(0);
+            expect(serialize(b)).to.equal('BigInt("0")');
+            expect(serialize({t: [b]})).to.be.a('string').equal('{"t":[BigInt("0")]}');
+        });
+
         it('should deserialize BigInt', function () {
             var d = eval(serialize(BigInt(9999)));
             expect(d).to.be.a('BigInt');
@@ -449,6 +455,20 @@ describe('serialize( obj )', function () {
 
         it('should throw error for invalid bigint', function () {
             expect(() => serialize(BigInt('abc'))).to.throw(Error);
+        });
+    });
+
+    describe('URL', function () {
+        it('should serialize URL', function () {
+            var u = new URL('https://x.com/')
+            expect(serialize(u)).to.equal('new URL("https://x.com/")');
+            expect(serialize({t: [u]})).to.be.a('string').equal('{"t":[new URL("https://x.com/")]}');
+        });
+
+        it('should deserialize URL', function () {
+            var d = eval(serialize(new URL('https://x.com/')));
+            expect(d).to.be.a('URL');
+            expect(d.toString()).to.equal('https://x.com/');
         });
     });
 
