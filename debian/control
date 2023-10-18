@@ -5,12 +5,12 @@ Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.deb
 Uploaders:
  Jonas Smedegaard <dr@jones.dk>,
 Build-Depends:
- debhelper-compat (= 12),
+ debhelper-compat (= 13),
  mocha <!nocheck>,
  node-chai,
  node-randombytes <!nocheck>,
  pandoc <!nodoc>,
-Standards-Version: 4.5.1
+Standards-Version: 4.6.2
 Rules-Requires-Root: no
 Homepage: https://github.com/yahoo/serialize-javascript
 Vcs-Git: https://salsa.debian.org/js-team/node-serialize-javascript.git
@@ -21,6 +21,7 @@ Architecture: all
 Depends:
  node-randombytes,
  ${misc:Depends},
+Multi-Arch: foreign
 Description: serialize JavaScript to a superset of JSON
  serialize-javascript is a Nodejs module
  to serialize JavaScript to a _superset_ of JSON

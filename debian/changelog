@@ -1,3 +1,38 @@
+node-serialize-javascript (6.0.1-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release
+
+  [ Jonas Smedegaard ]
+  * declare compliance with Debian Policy 4.6.2
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 03 Mar 2023 09:32:02 +0100
+
+node-serialize-javascript (6.0.0-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Update standards version to 4.6.1, no changes needed.
+  * Apply multi-arch hints. + node-serialize-javascript: Add Multi-Arch: foreign.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Wed, 07 Dec 2022 16:35:47 +0000
+
+node-serialize-javascript (6.0.0-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release
+
+  [ Jonas Smedegaard ]
+  * simplify source helper script copyright-check
+  * update copyright info:
+    + use Reference field (not License-Reference);
+      tighten lintian overrides
+    + update coverage
+  * declare compliance with Debian Policy 4.6.0
+  * use debhelper compatibility level 13 (not 12)
+  * update patch 2001
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 20 Nov 2021 01:48:52 +0100
+
 node-serialize-javascript (5.0.1-2) unstable; urgency=medium
 
   * simple re-release for a clean build
